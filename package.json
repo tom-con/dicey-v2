@@ -1,0 +1,36 @@
+{
+  "name": "Dicey",
+  "version": "1.0.0",
+  "description": "A Facebook Integrated game where you screw over your friends with a collaborative sentence",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-moment": "^1.0.1",
+    "angular-ui-router": "^1.0.3",
+    "bcryptjs": "^2.4.3",
+    "express-validation": "^1.0.2",
+    "joi": "^10.6.0",
+    "jsonwebtoken": "^7.4.1",
+    "knex": "^0.13.0",
+    "moment": "^2.18.1",
+    "pg": "^6.4.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.2",
+    "chai": "^4.0.2",
+    "chai-http": "^3.0.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tom-con/dicey-v2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tom-con/dicey-v2/issues"
+  },
+  "homepage": "https://github.com/tom-con/dicey-v2#readme"
+}
