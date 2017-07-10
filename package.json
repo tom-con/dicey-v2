@@ -16,12 +16,19 @@
     "pg": "^6.4.0"
   },
   "devDependencies": {
-    "mocha": "^3.4.2",
+    "browser-sync": "^2.18.12",
     "chai": "^4.0.2",
-    "chai-http": "^3.0.0"
+    "chai-http": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.2.1",
+    "mocha": "^3.4.2"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "gulp",
+    "knex": "knex",
+    "heroku-postbuild": "knex migrate:rollback --knexfile server/knexfile.js; knex migrate:latest --knexfile server/knexfile.js; knex seed:run --knexfile server/knexfile.js;",
+    "nodemon": "node server/app.js"
   },
   "repository": {
     "type": "git",

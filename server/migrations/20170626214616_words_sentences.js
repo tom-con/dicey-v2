@@ -3,6 +3,7 @@ exports.up = function(knex, Promise) {
     tbl.increments()
     tbl.integer('word_id').notNullable().references('words.id').onDelete('CASCADE')
     tbl.integer('sentence_id').notNullable().references('sentences.id').onDelete('CASCADE')
+    tbl.integer('position')
   })
 };
 

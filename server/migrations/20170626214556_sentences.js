@@ -3,7 +3,8 @@ exports.up = function(knex, Promise) {
     tbl.increments()
     tbl.integer('group_id').notNullable().references('groups.id').onDelete('CASCADE')
     tbl.boolean('completed').defaultTo(false)
-    tbl.text('current_turn')
+    tbl.integer('winner').references('users.fbid')
+    tbl.text('post_url')
   })
 };
 
