@@ -4,16 +4,23 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var index = require('./routes/index');
-
 var app = express();
+
+var users = require('./routes/users');
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/../client')))
+app.use(express.static(path.join(__dirname, '/../', 'node_modules')))
 
-app.use('/', index);
+app.use('/api/users', users);
+
+app.use('*', function(req, res) {
+  res.sendFile('index.html', {
+    root: path.join(__dirname, '/../client')
+  })
+})
 
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
