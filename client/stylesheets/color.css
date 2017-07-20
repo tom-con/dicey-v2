@@ -1,0 +1,162 @@
+/**
+ * ===============================
+ *  Defult CSS
+ * ===============================
+ */
+body {
+  color: #686868;
+  background-color: rgb(10, 10, 10);
+}
+p {
+  color: #686868;
+}
+/*
+ * ====================================
+ * Gradient Text and border Color
+ * ====================================
+ */
+
+ .gradient-text, .gradient-text-teal {
+   -moz-background-clip: text;
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -moz-text-fill-color: transparent;
+   text-fill-color: transparent;
+ }
+ .gradient-text-full, .gradient-text-full-teal {
+   -moz-background-clip: text;
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -moz-text-fill-color: transparent;
+   text-fill-color: transparent;
+ }
+ .gradient-border {
+   display: inline-block;
+   position: relative;
+   width: 70px;
+   height: 70px;
+   z-index: 1;
+ }
+ .gradient-border::before,
+ .gradient-border::after {
+   content: '';
+   position: absolute;
+   border-radius: 50% 50% 50% 50%;
+   -webkit-border-radius: 50% 50% 50% 50%;
+   -moz-border-radius: 50% 50% 50% 50%;
+   -ms-border-radius: 50% 50% 50% 50%;
+   -o-border-radius: 50% 50% 50% 50%;
+ }
+ .gradient-border::before {
+   top: -2px;
+   bottom: -2px;
+   left: -2px;
+   right: -2px;
+   z-index: -2;
+ }
+ .gradient-border::after {
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   z-index: -1;
+ }
+ .vertical-middle {
+   display: table-cell;
+   float: none;
+   vertical-align: middle;
+ }
+
+.gradient-text {
+  background-image: -webkit-linear-gradient(130deg, rgba(148, 73, 222, 0.97) 0%, rgba(224, 12, 134, 0.85) 100%);
+  background-image: -ms-linear-gradient(130deg, rgba(148, 73, 222, 0.97) 0%, rgba(224, 12, 134, 0.85) 100%);
+  background-image: -o-linear-gradient(130deg, rgba(148, 73, 222, 0.97) 0%, rgba(224, 12, 134, 0.85) 100%);
+}
+.gradient-text-full {
+  background-image: -webkit-linear-gradient(130deg, rgba(148, 73, 222, 0.97) 0%, rgba(224, 12, 134, 0.85) 100%);
+  background-image: -ms-linear-gradient(130deg, rgba(148, 73, 222, 0.97) 0%, rgba(224, 12, 134, 0.85) 100%);
+  background-image: -o-linear-gradient(130deg, rgba(148, 73, 222, 0.97) 0%, rgba(224, 12, 134, 0.85) 100%);
+}
+.gradient-text-teal {
+  background-image: -webkit-linear-gradient(130deg, rgba(29, 218, 161, 0.97) 0%, rgba(40, 77, 235, 1) 100%);
+  background-image: -ms-linear-gradient(130deg, rgba(29, 218, 161, 0.97) 0%, rgba(40, 77, 235, 1) 100%);
+  background-image: -o-linear-gradient(130deg, rgba(29, 218, 161, 0.97) 0%, rgba(40, 77, 235, 1) 100%);
+}
+.gradient-text-full-teal {
+  background-image: -webkit-linear-gradient(130deg, rgba(29, 218, 161, 0.97) 0%, rgba(40, 77, 235, 1) 100%);
+  background-image: -ms-linear-gradient(130deg, rgba(29, 218, 161, 0.97) 0%, rgba(40, 77, 235, 1) 100%);
+  background-image: -o-linear-gradient(130deg, rgba(29, 218, 161, 0.97) 0%, rgba(40, 77, 235, 1) 100%);
+}
+.gradient-border::before {
+  background-image: linear-gradient(130deg, rgba(148, 73, 222, 0.97) 0%, rgba(224, 12, 134, 0.85) 100%);
+  background-image: -webkit-linear-gradient(130deg, rgba(148, 73, 222, 0.97) 0%, rgba(224, 12, 134, 0.85) 100%);
+  background-image: -moz-linear-gradient(130deg, rgba(148, 73, 222, 0.97) 0%, rgba(224, 12, 134, 0.85) 100%);
+  background-image: -ms-linear-gradient(130deg, rgba(148, 73, 222, 0.97) 0%, rgba(224, 12, 134, 0.85) 100%);
+  background-image: -o-linear-gradient(130deg, rgba(148, 73, 222, 0.97) 0%, rgba(224, 12, 134, 0.85) 100%);
+}
+.gradient-border::after {
+  background-color: #ffffff;
+}
+/**
+ * ===============================
+ *  Section Top and Bottom padding
+ * ===============================
+ */
+.section-separator-line {
+  border-color: rgba(0, 0, 0, 0.12);
+}
+/**
+ * ====================================
+ * Background Overlay Color
+ * ====================================
+ */
+.overlay-color {
+  background-image: linear-gradient(130deg, rgba(148, 73, 222, 0.97) 0%, rgba(224, 12, 134, 0.85) 100%);
+  background-image: -webkit-linear-gradient(150deg, rgba(148, 73, 222, 0.97) 0%, rgba(224, 12, 134, 0.85) 100%);
+  background-image: -moz-linear-gradient(130deg, rgba(148, 73, 222, 0.97) 0%, rgba(224, 12, 134, 0.85) 100%);
+  background-image: -ms-linear-gradient(130deg, rgba(148, 73, 222, 0.97) 0%, rgba(224, 12, 134, 0.85) 100%);
+  background-image: -o-linear-gradient(130deg, rgba(148, 73, 222, 0.97) 0%, rgba(224, 12, 134, 0.85) 100%);
+  /* 15% transparency */
+}
+.overlay-color-full {
+  background-image: linear-gradient(130deg, rgba(148, 73, 222, 0.97) 0%, rgba(224, 12, 134, 0.85) 100%);
+  background-image: -webkit-linear-gradient(130deg, rgba(148, 73, 222, 0.97) 0%, rgba(224, 12, 134, 0.85) 100%);
+  background-image: -moz-linear-gradient(130deg, rgba(148, 73, 222, 0.97) 0%, rgba(224, 12, 134, 0.85) 100%);
+  background-image: -ms-linear-gradient(130deg, rgba(148, 73, 222, 0.97) 0%, rgba(224, 12, 134, 0.85) 100%);
+  background-image: -o-linear-gradient(130deg, rgba(148, 73, 222, 0.97) 0%, rgba(224, 12, 134, 0.85) 100%);
+  /* 0% transparency */
+}
+
+.overlay-color-teal {
+  background-image: linear-gradient(130deg, rgba(29, 218, 161, 0.97) 0%, rgba(40, 77, 235, 1) 100%);
+  background-image: -webkit-linear-gradient(150deg, rgba(29, 218, 161, 0.97) 0%, rgba(40, 77, 235, 1) 100%);
+  background-image: -moz-linear-gradient(130deg, rgba(29, 218, 161, 0.97) 0%, rgba(40, 77, 235, 1) 100%);
+  background-image: -ms-linear-gradient(130deg, rgba(29, 218, 161, 0.97) 0%, rgba(40, 77, 235, 1) 100%);
+  background-image: -o-linear-gradient(130deg, rgba(29, 218, 161, 0.97) 0%, rgba(40, 77, 235, 1) 100%);
+  /* 15% transparency */
+}
+.overlay-color-full-teal {
+  background-image: linear-gradient(130deg, rgba(29, 218, 161, 0.97) 0%, rgba(40, 77, 235, 1) 100%);
+  background-image: -webkit-linear-gradient(130deg, rgba(29, 218, 161, 0.97) 0%, rgba(40, 77, 235, 1) 100%);
+  background-image: -moz-linear-gradient(130deg, rgba(29, 218, 161, 0.97) 0%, rgba(40, 77, 235, 1) 100%);
+  background-image: -ms-linear-gradient(130deg, rgba(29, 218, 161, 0.97) 0%, rgba(40, 77, 235, 1) 100%);
+  background-image: -o-linear-gradient(130deg, rgba(29, 218, 161, 0.97) 0%, rgba(40, 77, 235, 1) 100%);
+  /* 0% transparency */
+}
+
+.group-box {
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+}
+
+.chip {
+  background-color: rgb(24, 24, 24);
+  font-size: 15px;
+}
+
+.tiny-img {
+
+}
